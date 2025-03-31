@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+form{
+	text-align: center;
+}
+
+div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+label{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin: 10px;
+}
+
+input[name="number"]{
+	width: 100px;
+}
+input[name="name"]{
+	width: 200px;
+}
+input[name="password"]{
+	width: 200px;
+}
+select {
+    width: 125px;
+}
+
+.success{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 25px;
+	color: blue;
+}
+
+.error{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 25px;
+	color: red;
+}
+
+button[value="search"],[value="insert"],[value="update"],[value="delete"]{
+	text-align: center;
+	width: 100px;			/* 幅をpxに設定 */
+	height: 30px;			/*高さをpxに設定*/
+	border-radius: 20px;	/* ボタンの角を丸くする */
+	margin: 0px 25px;		/* 左右のマージンを自動にして中央に配置 */
+	margin-top: 50px;
+	transition: background-color 0.3s ease;
+}
+
+button[value="search"]:hover {
+    background-color: skyblue;
+}
+button[value="insert"]:hover {
+    background-color: lightgoldenrodyellow;
+}
+button[value="update"]:hover {
+    background-color: yellowgreen;
+}
+button[value="delete"]:hover {
+    background-color: salmon;
+}
+
+h1{
+	text-align: center;
+	font-size: 50px;
+	margin-top: 100px;
+}
